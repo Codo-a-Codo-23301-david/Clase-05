@@ -13,6 +13,9 @@ class Button {
     render(){
         let myApp = document.getElementById(this.parentID);
 
+        //quise ejecutar un evento onclick pero no pude hacerlo funcionar.
+        // const myButtonHTML = myApp.innerHTML + "<button onclick= " + "presionar()>"+ this.text + "</button>";
+        
         const myButtonHTML = myApp.innerHTML + "<button>"+ this.text + "</button>";
 
         myApp.innerHTML = myButtonHTML; // VAmos a escribir el html para que se 
@@ -46,6 +49,13 @@ function renderInput(type){
     let myInput2 = new Input("objInput", input_type);
     myInput2.render();
 }
+
+// esta función era para hacer que al presionar el botón se genere un alerta
+// era para probar si funcionaba para luego al seleccionar el botón se creara el Input 
+
+/*function presionar2(){
+    alert("Boton presionado" );
+}*/
 
 
 // lo mismo pero con objeto Input
